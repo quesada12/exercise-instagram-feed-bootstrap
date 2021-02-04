@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <style>
+        .nav-pills .nav-link.active,
+        .nav-pills.show>.nav-link {
+            color: white;
+            background-color: #666666;
+        }
+
+        .nav-pills .nav-link,
+        .nav-pills.show>.nav-link {
+            color: #666666;
+
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/5cff725e3e.js" crossorigin="anonymous"></script>
+
+    <title>Instagram Bootstrap</title>
+
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+
+        <nav class="navbar navbar-light bg-light justify-content-around fixed-top pb-3 border-bottom">
+            <a class="navbar-brand text-secondary" href="#!"> <i class="fab fa-instagram"></i> Instagram</a>
+
+            <div class="d-flex ">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Create a new post</button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle text-dark bg-light border-0" type="button"
+                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                        <div class="row mx-1">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col mt-2">
+                                <button class="btn btn-secondary text-dark bg-light" type="button"
+                                    id="dropdownMenuButton">
+                                    <i class="fas fa-camera"></i>
+                                </button>
+
+                                <button class="btn btn-secondary text-dark bg-light" type="button"
+                                    id="dropdownMenuButton">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-5 pt-3">
+
+
+            <div class="row mt-2 d-flex justify-content-center bg-white ">
+                <div class="col"></div>
+                <div class="col d-flex justify-content-center">
+
+                    <ul class="nav nav-pills ">
+                        <li class="nav-item custom-pill">
+                            <a class="nav-link border mx-1 " href="#multiple" data-bs-toggle="pill"><i
+                                    class="fas fa-th"></i></a>
+                        </li>
+                        <li class="nav-item custom-pill">
+                            <a class="nav-link border mx-1 custom-pill" href="#single" data-bs-toggle="pill"><i
+                                    class="fas fa-square"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col"></div>
+            </div>
+
+
+            <div class="tab-content">
+                <div id="multiple" class="tab-pane fade show active">
+                    <div class="row align-items-center my-lg-2 my-0">
+                        <div class="col-md-4">
+                            <img class="img-fluid my-lg-0 my-2"
+                                src="https://cdn-3.expansion.mx/dims4/default/fb99925/2147483647/strip/true/crop/1257x835+0+0/resize/800x531!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe9%2F6b%2F62c002ee4ed19fcec0565f807cb2%2Fistock-184650151.jpg"
+                                alt="Thumbnail image">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid my-lg-0 my-2"
+                                src="https://assets.metrolatam.com/hub/2017/02/23/Screen-Shot-2017-02-23-at-1.15.46-PM-900x600.jpg"
+                                alt="Thumbnail image">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid my-lg-0 my-2"
+                                src="https://www.nacion.com/resizer/OAvG9mQeyv1Sbex7o3OxDwtkuX4=/600x0/center/middle/filters:quality(100)/arc-anglerfish-arc2-prod-gruponacion.s3.amazonaws.com/public/NYQXDKEWIZBEDH3MROO4V6B7H4.JPG"
+                                alt="Thumbnail image">
+                        </div>
+                    </div>
+
+
+                    <div class="row align-items-center my-lg-2 my-0">
+                        <div class="col-md-4">
+                            <img class="img-fluid my-lg-0 my-2"
+                                src="https://cdn-3.expansion.mx/dims4/default/fb99925/2147483647/strip/true/crop/1257x835+0+0/resize/800x531!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe9%2F6b%2F62c002ee4ed19fcec0565f807cb2%2Fistock-184650151.jpg"
+                                alt="Thumbnail image">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid my-lg-0 my-2"
+                                src="https://assets.metrolatam.com/hub/2017/02/23/Screen-Shot-2017-02-23-at-1.15.46-PM-900x600.jpg"
+                                alt="Thumbnail image">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid my-lg-0 my-2"
+                                src="https://www.nacion.com/resizer/OAvG9mQeyv1Sbex7o3OxDwtkuX4=/600x0/center/middle/filters:quality(100)/arc-anglerfish-arc2-prod-gruponacion.s3.amazonaws.com/public/NYQXDKEWIZBEDH3MROO4V6B7H4.JPG"
+                                alt="Thumbnail image">
+                        </div>
+                    </div>
+
+
+                    <div class="row align-items-center my-lg-2 my-0">
+                        <div class="col-md-4">
+                            <img class="img-fluid my-lg-0 my-2"
+                                src="https://cdn-3.expansion.mx/dims4/default/fb99925/2147483647/strip/true/crop/1257x835+0+0/resize/800x531!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe9%2F6b%2F62c002ee4ed19fcec0565f807cb2%2Fistock-184650151.jpg"
+                                alt="Thumbnail image">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid my-lg-0 my-2"
+                                src="https://assets.metrolatam.com/hub/2017/02/23/Screen-Shot-2017-02-23-at-1.15.46-PM-900x600.jpg"
+                                alt="Thumbnail image">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid my-lg-0 my-2"
+                                src="https://www.nacion.com/resizer/OAvG9mQeyv1Sbex7o3OxDwtkuX4=/600x0/center/middle/filters:quality(100)/arc-anglerfish-arc2-prod-gruponacion.s3.amazonaws.com/public/NYQXDKEWIZBEDH3MROO4V6B7H4.JPG"
+                                alt="Thumbnail image">
+                        </div>
+                    </div>
+
+
+                    <div class="row align-items-center my-lg-2 my-0">
+                        <div class="col-md-4">
+                            <img class="img-fluid my-lg-0 my-2"
+                                src="https://cdn-3.expansion.mx/dims4/default/fb99925/2147483647/strip/true/crop/1257x835+0+0/resize/800x531!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe9%2F6b%2F62c002ee4ed19fcec0565f807cb2%2Fistock-184650151.jpg"
+                                alt="Thumbnail image">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid my-lg-0 my-2"
+                                src="https://assets.metrolatam.com/hub/2017/02/23/Screen-Shot-2017-02-23-at-1.15.46-PM-900x600.jpg"
+                                alt="Thumbnail image">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid my-lg-0 my-2"
+                                src="https://www.nacion.com/resizer/OAvG9mQeyv1Sbex7o3OxDwtkuX4=/600x0/center/middle/filters:quality(100)/arc-anglerfish-arc2-prod-gruponacion.s3.amazonaws.com/public/NYQXDKEWIZBEDH3MROO4V6B7H4.JPG"
+                                alt="Thumbnail image">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div id="single" class="tab-pane fade ">
+
+
+                    <!-- Post 1 -->
+                    <div class="row bg-white mt-3">
+                        <div class="col"></div>
+                        <div class="col d-flex justify-content-center my-4">
+                            <div class="card" style="width: 39rem;">
+
+                                <div class="card-body">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col">
+                                            <h5 class="card-title">My first photo</h5>
+                                        </div>
+                                        <div class="col">
+                                            <h5 class="card-title text-end text-secondary">12/14</h5>
+                                        </div>
+                                    </div>
+                                    <img src="https://cdn-3.expansion.mx/dims4/default/fb99925/2147483647/strip/true/crop/1257x835+0+0/resize/800x531!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe9%2F6b%2F62c002ee4ed19fcec0565f807cb2%2Fistock-184650151.jpg"
+                                        class="img-fluid" alt="">
+                                    <p class="card-text mt-1"><strong>23 likes</strong> </p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col">
+                                            <button class="btn btn-secondary text-dark bg-white border-0" type="button"
+                                                id="dropdownMenuButton">
+                                                <i class="far fa-heart"></i>
+                                            </button>
+                                            <button class="btn btn-secondary text-dark bg-white border-0" type="button"
+                                                id="dropdownMenuButton">
+                                                Comment...
+                                            </button>
+                                        </div>
+                                        <div class="col text-end">
+                                            <button class="btn btn-secondary text-dark bg-white border-0" type="button"
+                                                id="dropdownMenuButton">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+
+                    <!-- Post 2 -->
+                    <div class="row bg-white mt-3">
+                        <div class="col"></div>
+                        <div class="col d-flex justify-content-center my-4">
+                            <div class="card" style="width: 39rem;">
+
+                                <div class="card-body">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col">
+                                            <h5 class="card-title">My first photo</h5>
+                                        </div>
+                                        <div class="col">
+                                            <h5 class="card-title text-end text-secondary">12/14</h5>
+                                        </div>
+                                    </div>
+                                    <img src="https://assets.metrolatam.com/hub/2017/02/23/Screen-Shot-2017-02-23-at-1.15.46-PM-900x600.jpg"
+                                        class="img-fluid" alt="">
+                                    <p class="card-text mt-1"><strong>23 likes</strong> </p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col">
+                                            <button class="btn btn-secondary text-dark bg-white border-0" type="button"
+                                                id="dropdownMenuButton">
+                                                <i class="far fa-heart"></i>
+                                            </button>
+                                            <button class="btn btn-secondary text-dark bg-white border-0" type="button"
+                                                id="dropdownMenuButton">
+                                                Comment...
+                                            </button>
+                                        </div>
+                                        <div class="col text-end">
+                                            <button class="btn btn-secondary text-dark bg-white border-0" type="button"
+                                                id="dropdownMenuButton">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+
+                    <!-- Post 3 -->
+                    <div class="row bg-white mt-3">
+                        <div class="col"></div>
+                        <div class="col d-flex justify-content-center my-4">
+                            <div class="card" style="width: 39rem;">
+
+                                <div class="card-body">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col">
+                                            <h5 class="card-title">My first photo</h5>
+                                        </div>
+                                        <div class="col">
+                                            <h5 class="card-title text-end text-secondary">12/14</h5>
+                                        </div>
+                                    </div>
+                                    <img src="https://www.nacion.com/resizer/OAvG9mQeyv1Sbex7o3OxDwtkuX4=/600x0/center/middle/filters:quality(100)/arc-anglerfish-arc2-prod-gruponacion.s3.amazonaws.com/public/NYQXDKEWIZBEDH3MROO4V6B7H4.JPG"
+                                        class="img-fluid" alt="">
+                                    <p class="card-text mt-1"><strong>23 likes</strong> </p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col">
+                                            <button class="btn btn-secondary text-dark bg-white border-0" type="button"
+                                                id="dropdownMenuButton">
+                                                <i class="far fa-heart"></i>
+                                            </button>
+                                            <button class="btn btn-secondary text-dark bg-white border-0" type="button"
+                                                id="dropdownMenuButton">
+                                                Comment...
+                                            </button>
+                                        </div>
+                                        <div class="col text-end">
+                                            <button class="btn btn-secondary text-dark bg-white border-0" type="button"
+                                                id="dropdownMenuButton">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
